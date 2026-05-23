@@ -90,15 +90,15 @@ production:
     database: moods_api_production
     username: moods_api
     password: <%= ENV["MOODS_API_DATABASE_PASSWORD"] %>
-  cache:
-    <<: *primary_production
-    database: moods_api_production_cache
-    migrations_paths: db/cache_migrate
-  queue:
-    <<: *primary_production
-    database: moods_api_production_queue
-    migrations_paths: db/queue_migrate
-  cable:
-    <<: *primary_production
-    database: moods_api_production_cable
-    migrations_paths: db/cable_migrate
+  # cache:
+  #   <<: *primary_production
+  #   database: moods_api_production_cache
+  #   migrations_paths: db/cache_migrate
+  # queue:
+  #   <<: *primary_production
+  #   database: moods_api_production_queue
+  #   migrations_paths: db/queue_migrate
+  # cable:
+  #   <<: *primary_production
+  #   database: moods_api_production_cable
+  #   migrations_paths: db/cable_migrate
